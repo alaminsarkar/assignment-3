@@ -6,11 +6,11 @@ function kilometerToMeter(kiloMeter)
 {
     if(kiloMeter>0){
 
-        var meter = (kiloMeter * 1000); // we know that 1killoMeter=1000 meter.
+        var meter = (kiloMeter * 1000);         // we know that 1killoMeter=1000 meter.
        
     }
     else{
-        console.log("Input the right value."); // if the value is start '-' , or 0;
+        console.log("Input the right value.");      // if the value is start '-' , or 0.
     }
     return   meter;
     
@@ -39,7 +39,7 @@ function budgetCalculator (watch,phone,laptop)
         var totalCost=((watch*watchPrice)+(phone*phonePrice)+( laptop*laptoPrice));
     }
     else{
-        console.log("input right value.") // if any product value is 0 or less than 0.
+        console.log("input right value.")       // if any product value is 0 or less than 0.
     }
 
     return totalCost;
@@ -66,17 +66,21 @@ function hotelCost (day)
 
         if(day>0 && day<=10){
 
-            var result= (day*fTenDays); // 1 to 10 days hotelCost.
+            var result= (day*fTenDays);         // 1 to 10 days hotelCost.
+
         }
+
         else if(day>11 && day<=20){
 
             var secondOffer=day-10;
-            var result=((10*100)+(secondOffer*sTenDays)); // 1 to 20 days hotelCost.
+            var result=((10*fTenDays)+(secondOffer*sTenDays));      // 1 to 20 days hotelCost.
         }
 
         else if(day>20){
+
             var thirdOffer=day-20;
-            var result =((10*100)+(10*80)+(thirdOffer*otherDays)); // 1 to n days hotelcost.
+            var result =((10*fTenDays)+(10*sTenDays)+(thirdOffer*otherDays));      // 1 to n days hotelcost.
+
         }
 
         else{
@@ -86,11 +90,13 @@ function hotelCost (day)
     }
 
     else{
-        console.log("Stay One Day Then Pay RoomCost."); // if day is 0 or less than 0.
+        
+        console.log("Stay One Day Then Pay RoomCost.");     // if day is 0 or less than 0.
+
     }
     return result;
 }
-var totalRoomCost=hotelCost(60);
+var totalRoomCost=hotelCost(70);
 console.log(totalRoomCost);
 
 //hotelColst end
@@ -111,7 +117,7 @@ function megaFriend (value){
     }
     return longWord;
 }
-var largestName=megaFriend(["alamin", "Tanvir", "anik", "Rakibul"]);
+var largestName=megaFriend(["alamin", "Tanvir", "anik", "RakibulIslam"]);
 console.log(largestName);
 
 //megaFriend end
