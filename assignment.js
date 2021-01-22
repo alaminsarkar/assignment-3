@@ -1,4 +1,4 @@
-//
+// https://github.com/alaminsarkar/assignment-3/blob/main/assignment.js
 
 //kilometerToMeter start
 
@@ -24,7 +24,7 @@ console.log(result);
 
 
 
-//
+
 
 // budgetCalculator start
 
@@ -53,9 +53,9 @@ console.log(resultbc);
 
 
 
-//
 
-//hotelColst start
+
+//hotelCost start
 
 function hotelCost (day)
 {
@@ -96,7 +96,7 @@ console.log(totalRoomCost);
 //hotelColst end
 
 
-//
+
 
 //megaFriend start
 
